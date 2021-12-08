@@ -3,6 +3,9 @@ const express = require('express');
 const server = express();
 const axios = require("axios");
 // create logs for everything
+
+const cors = require("cors")
+server.use(cors())
 const morgan = require('morgan');
 server.use(morgan('dev'));
 
